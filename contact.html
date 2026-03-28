@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rabinado</title>
+<title>Contact - Rabinado</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -18,12 +18,11 @@
 body {
   background: #000;
   color: #fff;
+  text-align: center;
 }
 
 /* NAVBAR */
 nav {
-  position: fixed;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
@@ -49,29 +48,28 @@ nav ul li a:hover {
   color: #ffd700;
 }
 
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
+/* CONTACT */
+.container {
+  margin-top: 100px;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 900px;
-  height: 900px;
-  background: url('Logo.png') no-repeat center;
-  background-size: contain;
-  opacity: 0.05;
-}
-
-.hero h1 {
-  font-size: 60px;
+h1 {
   color: #ffd700;
+}
+
+input, textarea {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #ffd700;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 </style>
 </head>
@@ -86,8 +84,17 @@ nav ul li a:hover {
   </ul>
 </nav>
 
-<div class="hero">
-  <h1>Rabinado</h1>
+<div class="container">
+  <h1>Contact Us</h1>
+
+  <input placeholder="Name"><br>
+  <input placeholder="Email"><br>
+  <textarea placeholder="Message"></textarea><br>
+  <button>Send</button>
+
+  <p style="margin-top:20px;">
+    Email: Rabinadopvtltd@gmail.com
+  </p>
 </div>
 
 </body>
