@@ -28,26 +28,30 @@
       overflow: hidden;
     }
 
-    /* 🔥 BIG BACKGROUND LOGO */
+    /* 🔥 FIXED BACKGROUND LOGO */
     body::before {
       content: "";
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 800px;   /* 🔥 BIG SIZE */
+      width: 800px;
       height: 800px;
       transform: translate(-50%, -50%);
       background: url('Logo.png') no-repeat center;
       background-size: contain;
-      opacity: 0.22;
+      opacity: 0.3;
       z-index: 0;
-      animation: floatLogo 6s ease-in-out infinite;
 
-      /* ✨ glow */
-      filter: drop-shadow(0 0 40px rgba(250,204,21,0.3));
+      /* ✅ KEY FIX (shows logo even if black bg) */
+      mix-blend-mode: screen;
+
+      /* ✨ Enhance gold */
+      filter: brightness(1.4) contrast(1.2);
+
+      animation: floatLogo 6s ease-in-out infinite;
     }
 
-    /* Glow background */
+    /* Glow */
     body::after {
       content: "";
       position: absolute;
