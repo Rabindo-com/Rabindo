@@ -96,14 +96,10 @@ nav ul li a:hover {
   z-index: 1;
 }
 
-/* SECTIONS */
+/* CONTACT */
 section {
   padding: 100px 20px;
   text-align: center;
-}
-
-.alt {
-  background: #0a0a0a;
 }
 
 h2 {
@@ -111,26 +107,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-.services {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 250px;
-  padding: 25px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,215,0,0.15);
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-/* CONTACT */
 input, textarea {
   width: 300px;
   padding: 10px;
@@ -144,6 +120,7 @@ button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 footer {
@@ -163,16 +140,16 @@ footer {
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
   <h2>Rabinado</h2>
   <ul>
     <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
+<!-- HERO -->
 <section id="home" class="hero">
   <div>
     <h1>Rabinado</h1>
@@ -180,20 +157,7 @@ footer {
   </div>
 </section>
 
-<section id="about">
-  <h2>About</h2>
-  <p>We deliver cloud, DevOps and modern digital solutions.</p>
-</section>
-
-<section id="services" class="alt">
-  <h2>Services</h2>
-  <div class="services">
-    <div class="card">Cloud</div>
-    <div class="card">DevOps</div>
-    <div class="card">Web</div>
-  </div>
-</section>
-
+<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
   <input placeholder="Name"><br>
@@ -203,6 +167,7 @@ footer {
   <p>Email: Rabinadopvtltd@gmail.com</p>
 </section>
 
+<!-- FOOTER -->
 <footer>
   © 2026 Rabinado
 </footer>
