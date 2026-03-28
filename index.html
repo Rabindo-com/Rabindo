@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rabinado | Launching Soon</title>
 
-  <!-- Google Font -->
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -26,28 +24,48 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 🔥 BACKGROUND LOGO */
+    body::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: url('logo.png') no-repeat center;
+      background-size: contain;
+      opacity: 0.05;
+      z-index: 0;
+    }
+
+    /* ✨ subtle glow effect */
+    body::after {
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(250,204,21,0.08), transparent 70%);
+      z-index: 0;
     }
 
     .container {
       max-width: 700px;
       padding: 40px;
       animation: fadeIn 1.5s ease-in-out;
+      position: relative;
+      z-index: 1;
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
     }
 
     .logo {
       font-size: 42px;
       font-weight: 600;
-      color: #38bdf8;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-    }
-
-    .tagline {
-      font-size: 14px;
-      color: #9ca3af;
-      margin-bottom: 30px;
+      color: #facc15;
       letter-spacing: 2px;
-      text-transform: uppercase;
+      margin-bottom: 10px;
     }
 
     h1 {
@@ -64,9 +82,9 @@
     }
 
     .divider {
-      width: 60px;
-      height: 3px;
-      background: #38bdf8;
+      width: 80px;
+      height: 2px;
+      background: #facc15;
       margin: 20px auto;
       border-radius: 5px;
     }
@@ -89,7 +107,7 @@
     button {
       padding: 12px 18px;
       border: none;
-      background: #38bdf8;
+      background: #facc15;
       color: #000;
       font-weight: 600;
       border-radius: 0 6px 6px 0;
@@ -98,7 +116,7 @@
     }
 
     button:hover {
-      background: #0ea5e9;
+      background: #eab308;
     }
 
     .contact {
@@ -108,7 +126,7 @@
     }
 
     .contact a {
-      color: #38bdf8;
+      color: #facc15;
       text-decoration: none;
     }
 
@@ -128,6 +146,7 @@
       .logo { font-size: 32px; }
       input { width: 50%; }
     }
+
   </style>
 
 </head>
@@ -137,8 +156,7 @@
   <div class="container">
 
 ```
-<div class="logo">Rabinado</div>
-<div class="tagline">Innovating the Future</div>
+<div class="logo">RABINADO</div>
 
 <h1>We’re Launching Soon</h1>
 
@@ -146,18 +164,17 @@
 
 <p>
   Our website is currently under development.<br>
-  We are working behind the scenes to deliver a seamless and innovative experience.<br><br>
+  We are working behind the scenes to deliver a seamless and premium experience.<br><br>
   We’ll be live shortly — stay connected.
 </p>
 
-<!-- Optional Email Subscription -->
 <div class="email-box">
   <input type="email" placeholder="Enter your email">
-  <button>Notify Me</button>
+  <button>Notify</button>
 </div>
 
 <div class="contact">
-  For inquiries: <a href="mailto:Rabinadopvtltd@gmail.com">Rabinadopvtltd@gmail.com</a>
+  Contact: <a href="mailto:info@rabinado.com">info@rabinado.com</a>
 </div>
 
 <div class="footer">
