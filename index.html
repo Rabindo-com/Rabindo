@@ -1,214 +1,171 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Naveen Kumar RB - Cloud Engineer</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rabinado | Launching Soon</title>
+
+  <!-- Google Font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0a0f1c, #111827);
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 700px;
+      padding: 40px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .logo {
+      font-size: 42px;
+      font-weight: 600;
+      color: #38bdf8;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #f9fafb;
+    }
+
+    p {
+      font-size: 16px;
+      color: #9ca3af;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #38bdf8;
+      margin: 20px auto;
+      border-radius: 5px;
+    }
+
+    .email-box {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    input {
+      padding: 12px;
+      border: none;
+      border-radius: 6px 0 0 6px;
+      outline: none;
+      width: 60%;
+      max-width: 250px;
+    }
+
+    button {
+      padding: 12px 18px;
+      border: none;
+      background: #38bdf8;
+      color: #000;
+      font-weight: 600;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    .contact {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .contact a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      .logo { font-size: 32px; }
+      input { width: 50%; }
+    }
+  </style>
+
 </head>
+
 <body>
-  <header>
-    <h1>Naveen Kumar RB</h1>
-    <p>Cloud Engineer | DevOps Professional</p>
-  </header>
 
   <div class="container">
-    <aside class="sidebar">
-      <div class="profile-photo">
-        <img src="Photo.png" alt="Naveen Kumar RB">
-      </div>
-      <section id="contact">
-        <div class="contact-info">
-          <h2>Contact</h2>
-          <p>📱 +91-8553822922<br>+91-7090431337</p>
-          <p>✉️ <a href="mailto:naveenkumar.rb@outlook.com">naveenkumar.rb@outlook.com</a></p>
-          <p>🔗 <a href="https://linkedin.com/in/NaveenKumarRB" target="_blank">linkedin.com/in/NaveenKumarRB</a></p>
-        </div>
-      </section>
 
-      <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skill-category">
-          <h3>Cloud Skills</h3>
-          <p>Azure, AWS</p>
-        </div>
-        <div class="skill-category">
-          <h3>Networking</h3>
-          <p>VNet/VPC, Load Balancer, Route53/Azure DNS, Bastion, VPN</p>
-        </div>
-        <div class="skill-category">
-          <h3>CI/CD & Automation</h3>
-          <p>Jenkins, CI/CD pipelines, automated build & deployment workflows</p>
-        </div>
-        <div class="skill-category">
-          <h3>Containers & Orchestration</h3>
-          <p>Docker, Kubernetes (K8s)</p>
-        </div>
-        <div class="skill-category">
-          <h3>Infrastructure as Code</h3>
-          <p>Terraform</p>
-        </div>
-        <div class="skill-category">
-          <h3>Version Control</h3>
-          <p>Git, GitHub</p>
-        </div>
-        <div class="skill-category">
-          <h3>Monitoring & Logging</h3>
-          <p>Nagios, Azure Monitor, CloudWatch</p>
-        </div>
-        <div class="skill-category">
-          <h3>Build Tools</h3>
-          <p>Maven, Npm, Msbuild/dotnetcli</p>
-        </div>
-        <div class="skill-category">
-          <h3>Web Servers</h3>
-          <p>Apache, Nginx</p>
-        </div>
-        <div class="skill-category">
-          <h3>Operating Systems</h3>
-          <p>Linux (Ubuntu, CentOS), Windows</p>
-        </div>
-        <div class="skill-category">
-          <h3>Database</h3>
-          <p>SQL</p>
-        </div>
-        <div class="skill-category">
-          <h3>Other Tools</h3>
-          <p>Shell/Bash, Ansible, Prometheus, Grafana, MS Visio</p>
-        </div>
-      </section>
+```
+<div class="logo">Rabinado</div>
+<div class="tagline">Innovating the Future</div>
 
-      <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-          <strong>2022–2025</strong><br>
-          Bachelor's Degree, University of Mysore (BCA)<br>
-          <em>7.45 CGPA</em>
-        </div>
-        <div class="education-item">
-          <strong>2015–2018</strong><br>
-          Bachelor's Degree, Bangalore University (B.Sc)<br>
-          <em>Discontinued</em>
-        </div>
-        <div class="education-item">
-          <strong>2015</strong><br>
-          Class 12 – Karnataka PUC Board<br>
-          <em>5.99 CGPA</em>
-        </div>
-        <div class="education-item">
-          <strong>2013</strong><br>
-          Class 10 – Karnataka SSLC Board<br>
-          <em>7.5 CGPA</em>
-        </div>
-      </section>
-    </aside>
+<h1>We’re Launching Soon</h1>
 
-    <main class="main-content">
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Acquired 6+ years of overall IT experience, including 4+ years as a Cloud Engineer, with strong expertise in managing and optimizing Azure infrastructures. Skilled in working with Multi-cloud environments (Azure & AWS) and hands-on experience with DevOps tools such as Jenkins, Docker, Kubernetes, and Terraform. Proficient in deploying, configuring, and troubleshooting cloud environments while ensuring high availability, automation, performance, and security compliance.</p>
-      </section>
+<div class="divider"></div>
 
-      <section id="experience">
-        <h2>Work Experience</h2>
-        <article>
-          <h3>Software Engineer - Cloud/DevOps</h3>
-          <h4>InventSense Pvt Ltd</h4>
-          <p class="date">February 2024 – January 2026</p>
-          <ul>
-            <li>Designed and implemented CI/CD pipelines using Jenkins, integrating automated testing and deployment processes to reduce release cycles by 40%.</li>
-            <li>Managed infrastructure as code with Terraform, ensuring consistent and version-controlled deployments across multiple environments.</li>
-            <li>Configured and optimized AWS services including EC2, VPC, S3, RDS, Lambda, Load Balancer, IAM, and Route53 for high availability and performance.</li>
-            <li>Developed and maintained Docker containers and Kubernetes manifests for scalable application deployments.</li>
-            <li>Automated infrastructure tasks using Shell and Python scripts with boto3, improving operational efficiency.</li>
-            <li>Oversaw multi-environment management (development, testing, production) ensuring 99.9% uptime and reliability.</li>
-            <li>Implemented development and automation tools, enhancing IT infrastructure capabilities.</li>
-            <li>Built and maintained CI/CD pipelines, facilitating continuous integration and deployment.</li>
-            <li>Provided on-call support, resolving incidents with minimal downtime and maintaining system stability.</li>
-            <li>Utilized Docker for creating isolated development and testing environments via Docker Build and Compose.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Sr. Engineer – Cloud & Data Center</h3>
-          <h4>Microland Ltd</h4>
-          <p class="date">December 2021 – January 2024</p>
-          <ul>
-            <li>Led the creation and management of Azure and AWS cloud infrastructures, supporting organizational scalability.</li>
-            <li>Administered Azure AD, Application Gateways, Azure Monitor, Key Vaults, and storage solutions.</li>
-            <li>Managed VMs/EC2, VNet/VPC, NSG, storage (Blob, File, EBS), IAM, RBAC, App Services, Lambda Functions, and Load Balancers.</li>
-            <li>Performed maintenance tasks including upgrades, patching, backups, and troubleshooting for Azure services.</li>
-            <li>Managed users, groups, subscriptions, and resource groups with proper governance.</li>
-            <li>Built and maintained Linux and Windows servers, deploying Azure Web Apps and Lambda Functions.</li>
-            <li>Designed and supported complex cloud-based solutions using Azure Cloud technologies.</li>
-            <li>Managed hybrid cloud environments integrating on-premises and cloud resources.</li>
-            <li>Oversaw cloud deployments, ensuring seamless transitions and optimal performance.</li>
-            <li>Developed storage infrastructures tailored to project requirements.</li>
-            <li>Created comprehensive system documentation and best practice guidelines.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>System Engineer</h3>
-          <h4>Appnomic Systems Pvt Ltd</h4>
-          <p class="date">November 2020 – June 2021</p>
-          <ul>
-            <li>Monitored infrastructure proactively to prevent service impacts and ensure continuous availability.</li>
-            <li>Created and managed organizational infrastructure on Azure, optimizing for performance and security.</li>
-            <li>Troubleshot and resolved infrastructure issues promptly to minimize downtime.</li>
-            <li>Installed and configured Windows and Linux servers according to project specifications.</li>
-            <li>Handled ticket-based troubleshooting, providing efficient technical support.</li>
-            <li>Implemented backup strategies, configured alerts, and maintained data integrity.</li>
-            <li>Escalated issues proactively to prevent production impacts.</li>
-            <li>Generated daily, weekly, and monthly infrastructure utilization reports.</li>
-            <li>Developed a serverless function using Azure Functions and Boto3 to automate stale EBS snapshot deletion, reducing storage costs by 25%.</li>
-            <li>Automated resource management by verifying active VM instances and volume attachments.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Desktop Support Engineer</h3>
-          <h4>Comnet Solutions Pvt Ltd</h4>
-          <p class="date">July 2019 – August 2020</p>
-          <ul>
-            <li>Provided technical support for end-users across cloud and on-premises infrastructures.</li>
-            <li>Troubleshot and resolved technical issues efficiently, maintaining user productivity.</li>
-            <li>Applied security patches to end-user devices in compliance with organizational policies.</li>
-            <li>Installed and managed software applications based on user requirements.</li>
-            <li>Performed network patching and maintenance for organizational infrastructure.</li>
-            <li>Developed documentation and conducted user training sessions.</li>
-          </ul>
-        </article>
-      </section>
+<p>
+  Our website is currently under development.<br>
+  We are working behind the scenes to deliver a seamless and innovative experience.<br><br>
+  We’ll be live shortly — stay connected.
+</p>
 
-      <section id="projects">
-        <h2>Key Projects</h2>
-        <article>
-          <h3>CI/CD Pipeline Implementation</h3>
-          <p>Designed and deployed automated CI/CD pipelines using Jenkins for multiple applications, integrating testing and deployment workflows that reduced manual errors and accelerated release cycles.</p>
-        </article>
-        <article>
-          <h3>Cloud Infrastructure Migration</h3>
-          <p>Led the migration of on-premises infrastructure to Azure and AWS cloud environments, utilizing Terraform for infrastructure as code and ensuring high availability and cost optimization.</p>
-        </article>
-        <article>
-          <h3>Automated Resource Management</h3>
-          <p>Developed serverless functions for automated cleanup of cloud resources, including stale snapshots and unused assets, resulting in significant cost savings and improved resource utilization.</p>
-        </article>
-        <article>
-          <h3>Monitoring and Alerting System</h3>
-          <p>Implemented comprehensive monitoring solutions using Azure Monitor, CloudWatch, and Nagios, with automated alerting to ensure proactive issue resolution and minimal downtime.</p>
-        </article>
-      </section>
+<!-- Optional Email Subscription -->
+<div class="email-box">
+  <input type="email" placeholder="Enter your email">
+  <button>Notify Me</button>
+</div>
 
-      <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Microsoft Certified: Azure Solutions Architect Expert</li>
-        </ul>
-      </section>
-    </main>
+<div class="contact">
+  For inquiries: <a href="mailto:info@rabinado.com">info@rabinado.com</a>
+</div>
+
+<div class="footer">
+  © 2026 Rabinado. All rights reserved.
+</div>
+```
+
   </div>
 
-  <footer>
-    <p>&copy; 2025 Naveen Kumar RB. All rights reserved.</p>
-  </footer>
 </body>
 </html>
